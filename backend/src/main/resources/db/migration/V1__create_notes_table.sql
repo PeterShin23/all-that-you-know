@@ -1,0 +1,7 @@
+CREATE TABLE note (
+    id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    content TEXT,
+    parent_id INTEGER REFERENCES note(id) ON DELETE CASCADE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
