@@ -1,0 +1,11 @@
+ALTER TABLE clusters
+    ALTER COLUMN id TYPE BIGINT;
+
+ALTER TABLE notes
+    ALTER COLUMN id TYPE BIGINT;
+
+ALTER TABLE notes
+    ALTER COLUMN cluster_id TYPE BIGINT;
+
+ALTER TABLE notes
+    ALTER COLUMN parent_note_id TYPE BIGINT;

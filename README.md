@@ -24,3 +24,11 @@ You don't want to lose all that you know ;)
 **2. Restore on your new device**
 `docker cp backup.sql mind-db:/backup.sql`
 `docker exec -it mind-db psql -U postgres -d minddb -f /backup.sql`
+
+### Troubleshooting
+
+#### My DB isn't building
+
+1. Did you download PostgreSQL? My `docker-compose.yml` file specifies version 17.
+2. Have you added a `.env` file with the necessary variables?
+3. I run my server on 5433. This should be updated with whatever port your server runs on.
