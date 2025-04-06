@@ -25,7 +25,8 @@ flyway-cli:
 	  flyway/flyway migrate
 
 # Run backend with Flyway enabled
-flyway:
+start-flyway:
+	make db
 	@echo "Running Spring Boot with Flyway profile..."
 	$(MVNW) spring-boot:run -Dspring-boot.run.profiles=flyway
 
