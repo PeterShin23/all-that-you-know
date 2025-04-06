@@ -6,7 +6,15 @@ A Local Search Engine to explore and reference what you already know
 
 ### Spin up the DB and Service
 
-`cd backend && make dev`
+#### 1. Install necessary programs
+
+- [Docker Desktop](https://docs.docker.com/desktop/setup/install/windows-install/)
+
+- [PostgreSQL 17](https://www.postgresql.org/download/)
+
+#### 2. Start the service and database locally
+
+`cd backend && make start`
 
 ### Switching Devices
 
